@@ -25,9 +25,9 @@ from telegram.ext import (
 )
 from telegram.utils.helpers import mention_html
 
-from Natsuki import TIGERS, WOLVES, dispatcher
-from Natsuki.modules.disable import DisableAbleCommandHandler
-from Natsuki.modules.helper_funcs.chat_status import (
+from Alphax import TIGERS, WOLVES, dispatcher
+from Alphax.modules.disable import DisableAbleCommandHandler
+from Alphax.modules.helper_funcs.chat_status import (
     bot_admin,
     can_restrict,
     is_user_admin,
@@ -39,11 +39,11 @@ from Natsuki.modules.helper_funcs.extraction import (
     extract_user,
     extract_user_and_text,
 )
-from Natsuki.modules.helper_funcs.filters import CustomFilters
-from Natsuki.modules.helper_funcs.misc import split_message
-from Natsuki.modules.helper_funcs.string_handling import split_quotes
-from Natsuki.modules.log_channel import loggable
-from Natsuki.modules.sql import warns_sql as sql
+from Alphax.modules.helper_funcs.filters import CustomFilters
+from AlphaX.modules.helper_funcs.misc import split_message
+from Alphax.modules.helper_funcs.string_handling import split_quotes
+from Alphax.modules.log_channel import loggable
+from Alphax.modules.sql import warns_sql as sql
 
 WARN_HANDLER_GROUP = 9
 CURRENT_WARNING_FILTER_STRING = "<b>Current warning filters in this chat:</b>\n"
@@ -119,7 +119,7 @@ def warn(
             [
                 [
                     InlineKeyboardButton(
-                        "🔘 Remove warn", callback_data="rm_warn({})".format(user.id)
+                        "Remove This Shit warn", callback_data="rm_warn({})".format(user.id)
                     )
                 ]
             ]
@@ -181,7 +181,7 @@ def button(update: Update, context: CallbackContext) -> str:
             )
         else:
             update.effective_message.edit_text(
-                "User already has no warns.", parse_mode=ParseMode.HTML
+                "U Dumper This User Had No Warns", parse_mode=ParseMode.HTML
             )
 
     return ""
@@ -214,7 +214,7 @@ def warn_user(update: Update, context: CallbackContext) -> str:
         else:
             return warn(chat.get_member(user_id).user, chat, reason, message, warner)
     else:
-        message.reply_text("That looks like an invalid User ID to me.")
+        message.reply_text("Thats seems like this is an invlaid userid please give me valid user id")
     return ""
 
 
