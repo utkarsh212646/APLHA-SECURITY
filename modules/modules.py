@@ -4,8 +4,8 @@ import importlib
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, CommandHandler, run_async
 
-from Natsuki import dispatcher, telethn
-from Natsuki.__main__ import (
+from Alphax import dispatcher, telethn
+from Alphax.__main__ import (
     CHAT_SETTINGS,
     DATA_EXPORT,
     DATA_IMPORT,
