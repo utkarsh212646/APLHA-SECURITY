@@ -13,7 +13,7 @@ async def _(message):
 
 __help__ = """
 <b>Hi</b>
-- /hi: Hello there my name is Natsuki
+- /hi: Hello there my name is Alphax
 """
 __mod_name__ = "Alphax"
 ```
