@@ -2,7 +2,7 @@ import requests
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, CommandHandler, run_async
 
-from Natsuki import CASH_API_KEY, dispatcher
+from Alphax import CASH_API_KEY, dispatcher
 
 
 @run_async
