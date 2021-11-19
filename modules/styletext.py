@@ -1,9 +1,9 @@
 from telegram import ParseMode
 from telegram.ext import run_async
 
-from Natsuki import dispatcher
-from Natsuki.modules.disable import DisableAbleCommandHandler
-from Natsuki.modules.helper_funcs.alternate import typing_action
+from Alphax import dispatcher
+from Alphax.modules.disable import DisableAbleCommandHandler
+from Alphax.modules.helper_funcs.alternate import typing_action
 
 normiefont = [
     "a",
