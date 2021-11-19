@@ -12,10 +12,10 @@ from telegram.ext import (
 )
 from telegram.utils.helpers import mention_html
 
-from Natsuki import DRAGONS, LOGGER, TIGERS, WOLVES, dispatcher
-from Natsuki.modules.helper_funcs.chat_status import user_admin, user_not_admin
-from Natsuki.modules.log_channel import loggable
-from Natsuki.modules.sql import reporting_sql as sql
+from Alphax import DRAGONS, LOGGER, TIGERS, WOLVES, dispatcher
+from Alphax.modules.helper_funcs.chat_status import user_admin, user_not_admin
+from Alphax.modules.log_channel import loggable
+from Alphax.modules.sql import reporting_sql as sql
 
 REPORT_GROUP = 12
 REPORT_IMMUNE_USERS = DRAGONS + TIGERS + WOLVES
