@@ -9,15 +9,15 @@ from telegram.ext import (
     run_async,
 )
 
-from Natsuki import ALLOW_EXCL, CustomCommandHandler, dispatcher
-from Natsuki.modules.disable import DisableAbleCommandHandler
-from Natsuki.modules.helper_funcs.chat_status import (
+from Alphax import ALLOW_EXCL, CustomCommandHandler, dispatcher
+from Alphax.modules.disable import DisableAbleCommandHandler
+from Alphax.modules.helper_funcs.chat_status import (
     bot_can_delete,
     connection_status,
     dev_plus,
     user_admin,
 )
-from Natsuki.modules.sql import cleaner_sql as sql
+from Alphax.modules.sql import cleaner_sql as sql
 
 if ALLOW_EXCL:
     CMD_STARTERS = ("/", "!")
