@@ -5,10 +5,10 @@ from telegram import Bot, InlineKeyboardButton, InlineKeyboardMarkup, ParseMode,
 from telegram.error import BadRequest, Unauthorized
 from telegram.ext import CallbackQueryHandler, CommandHandler, run_async
 
-import Natsuki.modules.sql.connection_sql as sql
-from Natsuki import DEV_USERS, DRAGONS, dispatcher
-from Natsuki.modules.helper_funcs import chat_status
-from Natsuki.modules.helper_funcs.alternate import send_message, typing_action
+import Alphax.modules.sql.connection_sql as sql
+from Alphax import DEV_USERS, DRAGONS, dispatcher
+from Alphax.modules.helper_funcs import chat_status
+from Alphax.modules.helper_funcs.alternate import send_message, typing_action
 
 user_admin = chat_status.user_admin
 
@@ -397,7 +397,7 @@ This allows you to connect to a chat's database, and add things to it without th
  ✪ /connection*:* List connected chats
  ✪ /disconnect*:* Disconnect from a chat
  ✪ /helpconnect*:* List available commands that can be used remotely
-
+ ✪ /helpconnect*:* List available commands that can be used remotely
 *Admin only:*
  ✪ /allowconnect <yes/no>*:* allow a user to connect to a chat
 """
