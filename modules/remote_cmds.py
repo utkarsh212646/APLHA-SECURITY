@@ -2,8 +2,8 @@ from telegram import ChatPermissions, Update
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler, run_async
 
-from Natsuki import dispatcher
-from Natsuki.modules.helper_funcs.chat_status import (
+from Alphax import dispatcher
+from Alphax.modules.helper_funcs.chat_status import (
     bot_admin,
     is_bot_admin,
     is_user_ban_protected,
