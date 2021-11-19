@@ -2,8 +2,8 @@ import requests
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, run_async
 
-from Natsuki import dispatcher
-from Natsuki.modules.disable import DisableAbleCommandHandler
+from Alphax import dispatcher
+from Alphax.modules.disable import DisableAbleCommandHandler
 
 
 @run_async
