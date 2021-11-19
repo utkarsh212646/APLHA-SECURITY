@@ -16,8 +16,8 @@ from telegram import (
 from telegram.ext import CallbackContext, run_async
 from telegram.utils.helpers import mention_html
 
-from Natsuki import dispatcher
-from Natsuki.modules.disable import DisableAbleCommandHandler
+from Alphax import dispatcher
+from Alphax.modules.disable import DisableAbleCommandHandler
 
 combot_stickers_url = "https://combot.org/telegram/stickers?q="
 
@@ -135,7 +135,7 @@ def kang(update: Update, context: CallbackContext):
         elif msg.reply_to_message.sticker and msg.reply_to_message.sticker.emoji:
             sticker_emoji = msg.reply_to_message.sticker.emoji
         else:
-            sticker_emoji = "🤔"
+            sticker_emoji = "❤️"
 
         if not is_animated:
             try:
