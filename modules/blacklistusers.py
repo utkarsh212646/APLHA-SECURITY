@@ -6,14 +6,14 @@ from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler, run_async
 from telegram.utils.helpers import mention_html
 
-import ALPHAX.modules.sql.blacklistusers_sql as sql
-from ALPHAX import DEMONS, DEV_USERS, DRAGONS, OWNER_ID, TIGERS, WOLVES, dispatcher
-from Natsuki.modules.helper_funcs.chat_status import dev_plus
-from Natsuki.modules.helper_funcs.extraction import (
+import Alphax.modules.sql.blacklistusers_sql as sql
+from Alphax import DEMONS, DEV_USERS, DRAGONS, OWNER_ID, TIGERS, WOLVES, dispatcher
+from Alphax.modules.helper_funcs.chat_status import dev_plus
+from Alphax.modules.helper_funcs.extraction import (
     extract_user,
     extract_user_and_text,
 )
-from Natsuki.modules.log_channel import gloggable
+from Alphax.modules.log_channel import gloggable
 
 BLACKLISTWHITELIST = [OWNER_ID] + DEV_USERS + DRAGONS + WOLVES + DEMONS
 BLABLEUSERS = [OWNER_ID] + DEV_USERS
