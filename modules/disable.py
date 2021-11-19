@@ -12,9 +12,9 @@ from telegram.ext import (
 )
 from telegram.utils.helpers import escape_markdown
 
-from Natsuki import dispatcher
-from Natsuki.modules.helper_funcs.handlers import CMD_STARTERS, SpamChecker
-from Natsuki.modules.helper_funcs.misc import is_module_loaded
+from Alphax import dispatcher
+from Alphax.modules.helper_funcs.handlers import CMD_STARTERS, SpamChecker
+from Alphax.modules.helper_funcs.misc import is_module_loaded
 
 FILENAME = __name__.rsplit(".", 1)[-1]
 
