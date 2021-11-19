@@ -13,8 +13,8 @@ from telethon import events
 from telethon.tl.functions.channels import GetFullChannelRequest
 from telethon.tl.types import ChannelParticipantsAdmins
 
-import Natsuki.modules.sql.userinfo_sql as sql
-from Natsuki import (
+import Alphax.modules.sql.userinfo_sql as sql
+from Alphax import (
     DEMONS,
     DEV_USERS,
     DRAGONS,
@@ -25,14 +25,14 @@ from Natsuki import (
     dispatcher,
     sw,
 )
-from Natsuki import telethn as SaitamaTelethonClient
-from Natsuki.__main__ import STATS, TOKEN, USER_INFO
-from Natsuki.modules.disable import DisableAbleCommandHandler
-from Natsuki.modules.helper_funcs.chat_status import sudo_plus
-from Natsuki.modules.helper_funcs.extraction import extract_user
-from Natsuki.modules.sql.afk_sql import check_afk_status, is_afk
-from Natsuki.modules.sql.global_bans_sql import is_user_gbanned
-from Natsuki.modules.sql.users_sql import get_user_num_chats
+from Alphax import telethn as SaitamaTelethonClient
+from Alphax.__main__ import STATS, TOKEN, USER_INFO
+from Alphax.modules.disable import DisableAbleCommandHandler
+from Alphax.modules.helper_funcs.chat_status import sudo_plus
+from Alphax.modules.helper_funcs.extraction import extract_user
+from Alphax.modules.sql.afk_sql import check_afk_status, is_afk
+from Alphax.modules.sql.global_bans_sql import is_user_gbanned
+from Alphax.modules.sql.users_sql import get_user_num_chats
 
 
 def no_by_per(totalhp, percentage):
