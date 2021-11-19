@@ -4,8 +4,8 @@ from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, CommandHandler
 from telegram.ext.dispatcher import run_async
 
-from Natsuki import LOGGER, dispatcher
-from Natsuki.modules.helper_funcs.chat_status import dev_plus
+from Alphax import LOGGER, dispatcher
+from Alphax.modules.helper_funcs.chat_status import dev_plus
 
 
 @dev_plus
