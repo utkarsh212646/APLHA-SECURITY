@@ -22,7 +22,7 @@ from telegram.ext import (
 )
 from telegram.utils.helpers import escape_markdown, mention_html, mention_markdown
 
-import Natsuki.modules.sql.welcome_sql as sql
+import Alphax.modules.sql.welcome_sql as sql
 from Natsuki import (
     DEMONS,
     DEV_USERS,
@@ -35,18 +35,18 @@ from Natsuki import (
     dispatcher,
     sw,
 )
-from Natsuki.modules.helper_funcs.chat_status import (
+from Alphax.modules.helper_funcs.chat_status import (
     is_user_ban_protected,
     user_admin,
 )
-from Natsuki.modules.helper_funcs.misc import build_keyboard, revert_buttons
-from Natsuki.modules.helper_funcs.msg_types import get_welcome_type
-from Natsuki.modules.helper_funcs.string_handling import (
+from Alphax.modules.helper_funcs.misc import build_keyboard, revert_buttons
+from Alphax.modules.helper_funcs.msg_types import get_welcome_type
+from Alphax.modules.helper_funcs.string_handling import (
     escape_invalid_curly_brackets,
     markdown_parser,
 )
-from Natsuki.modules.log_channel import loggable
-from Natsuki.modules.sql.global_bans_sql import is_user_gbanned
+from Alphax.modules.log_channel import loggable
+from Alphax.modules.sql.global_bans_sql import is_user_gbanned
 
 VALID_WELCOME_FORMATTERS = [
     "first",
@@ -202,7 +202,7 @@ def new_member(update: Update, context: CallbackContext):
             # Welcome Devs
             elif new_mem.id in DEV_USERS:
                 update.effective_message.reply_text(
-                    "Whoa! A member of the Anteiku Union just joined!◉‿◉",
+                    "Wow My Master Had Just JOINED This Chat 👍 , How Are You My Master 🤓",
                     reply_to_message_id=reply,
                 )
                 continue
@@ -210,7 +210,7 @@ def new_member(update: Update, context: CallbackContext):
             # Welcome Sudos
             elif new_mem.id in DRAGONS:
                 update.effective_message.reply_text(
-                    "Huh! A Dragon disaster just joined! Stay Alert!",
+                  "My Devloper Just Appeard I Am Glad To See You Master Stay Alert Users !",
                     reply_to_message_id=reply,
                 )
                 continue
