@@ -5,8 +5,8 @@ import requests
 from telethon import types
 from telethon.tl import functions
 
-from Natsuki import telethn
-from Natsuki.events import register
+from Alphax import telethn
+from Alphax.events import register
 
 langi = "en"
 
