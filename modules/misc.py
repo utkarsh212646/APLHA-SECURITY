@@ -27,12 +27,12 @@ from telegram.ext.dispatcher import run_async
 from telegram.utils.helpers import escape_markdown
 from tswift import Song
 
-from Natsuki import DEV_USERS, OWNER_ID, dispatcher
-from Natsuki.__main__ import GDPR, STATS
-from Natsuki.modules.disable import DisableAbleCommandHandler
-from Natsuki.modules.helper_funcs.alternate import send_action, typing_action
-from Natsuki.modules.helper_funcs.chat_status import user_admin
-from Natsuki.modules.helper_funcs.filters import CustomFilters
+from Alphax import DEV_USERS, OWNER_ID, dispatcher
+from Alphax.__main__ import GDPR, STATS
+from Alphax.modules.disable import DisableAbleCommandHandler
+from Alphax.modules.helper_funcs.alternate import send_action, typing_action
+from Alphax.modules.helper_funcs.chat_status import user_admin
+from Alphax.modules.helper_funcs.filters import CustomFilters
 
 
 @run_async
