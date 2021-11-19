@@ -23,14 +23,14 @@ from telegram.ext import (
 from telegram.ext.dispatcher import run_async
 from telegram.utils.helpers import escape_markdown, mention_markdown
 
-import Natsuki.modules.sql.notes_sql as sql
-from Natsuki import DRAGONS, JOIN_LOGGER, LOGGER, SUPPORT_CHAT, dispatcher
-from Natsuki.modules.disable import DisableAbleCommandHandler
-from Natsuki.modules.helper_funcs.chat_status import connection_status, user_admin
-from Natsuki.modules.helper_funcs.handlers import MessageHandlerChecker
-from Natsuki.modules.helper_funcs.misc import build_keyboard, revert_buttons
-from Natsuki.modules.helper_funcs.msg_types import get_note_type
-from Natsuki.modules.helper_funcs.string_handling import (
+import Alphax.modules.sql.notes_sql as sql
+from Alphax import DRAGONS, JOIN_LOGGER, LOGGER, SUPPORT_CHAT, dispatcher
+from Alphax.modules.disable import DisableAbleCommandHandler
+from Alphax.modules.helper_funcs.chat_status import connection_status, user_admin
+from Alphax.modules.helper_funcs.handlers import MessageHandlerChecker
+from Alphax.modules.helper_funcs.misc import build_keyboard, revert_buttons
+from Alphax.modules.helper_funcs.msg_types import get_note_type
+from Alphax.modules.helper_funcs.string_handling import (
     escape_invalid_curly_brackets,
 )
 
