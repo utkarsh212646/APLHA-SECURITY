@@ -16,7 +16,7 @@ from Natsuki.__main__ import (
     USER_INFO,
     USER_SETTINGS,
 )
-from Natsuki.modules.helper_funcs.chat_status import dev_plus, sudo_plus
+from Alphax.modules.helper_funcs.chat_status import dev_plus, sudo_plus
 
 
 @run_async
