@@ -1,9 +1,9 @@
 from telegram.ext import run_async
 
-from Natsuki import dispatcher
-from Natsuki.modules.disable import DisableAbleCommandHandler
-from Natsuki.modules.helper_funcs.alternate import send_message
-from Natsuki.modules.helper_funcs.chat_status import user_admin
+from Alphax import dispatcher
+from Alphax.modules.disable import DisableAbleCommandHandler
+from Alphax.modules.helper_funcs.alternate import send_message
+from Alphax.modules.helper_funcs.chat_status import user_admin
 
 
 @run_async
