@@ -3,8 +3,8 @@ from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, run_async
 from wikipedia.exceptions import DisambiguationError, PageError
 
-from Natsuki import dispatcher
-from Natsuki.modules.disable import DisableAbleCommandHandler
+from Alpha import dispatcher
+from Alphax.modules.disable import DisableAbleCommandHandler
 
 
 @run_async
