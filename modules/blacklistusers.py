@@ -6,8 +6,8 @@ from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler, run_async
 from telegram.utils.helpers import mention_html
 
-import Natsuki.modules.sql.blacklistusers_sql as sql
-from Natsuki import DEMONS, DEV_USERS, DRAGONS, OWNER_ID, TIGERS, WOLVES, dispatcher
+import ALPHAX.modules.sql.blacklistusers_sql as sql
+from ALPHAX import DEMONS, DEV_USERS, DRAGONS, OWNER_ID, TIGERS, WOLVES, dispatcher
 from Natsuki.modules.helper_funcs.chat_status import dev_plus
 from Natsuki.modules.helper_funcs.extraction import (
     extract_user,
