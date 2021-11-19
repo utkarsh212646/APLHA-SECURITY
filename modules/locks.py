@@ -14,19 +14,19 @@ from telegram.ext import CommandHandler, Filters, MessageHandler
 from telegram.ext.dispatcher import run_async
 from telegram.utils.helpers import mention_html
 
-import Natsuki.modules.sql.locks_sql as sql
-from Natsuki import DRAGONS, LOGGER, dispatcher
-from Natsuki.modules.connection import connected
-from Natsuki.modules.disable import DisableAbleCommandHandler
-from Natsuki.modules.helper_funcs.alternate import send_message, typing_action
-from Natsuki.modules.helper_funcs.chat_status import (
+import Alphax.modules.sql.locks_sql as sql
+from Alphax import DRAGONS, LOGGER, dispatcher
+from Alphax.modules.connection import connected
+from Alphax.modules.disable import DisableAbleCommandHandler
+from Alphax.modules.helper_funcs.alternate import send_message, typing_action
+from Alphax.modules.helper_funcs.chat_status import (
     can_delete,
     is_bot_admin,
     is_user_admin,
     user_admin,
     user_not_admin,
 )
-from Natsuki.modules.log_channel import loggable
+from Alphax.modules.log_channel import loggable
 
 ad = AlphabetDetector()
 
