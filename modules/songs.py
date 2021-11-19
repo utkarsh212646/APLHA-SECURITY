@@ -5,8 +5,8 @@ from pyrogram import filters
 from pytube import YouTube
 from youtubesearchpython import VideosSearch
 
-from Natsuki import LOGGER, pbot
-from Natsuki.utils.uut import get_arg
+from Alphax import LOGGER, pbot
+from Alphax.utils.uut import get_arg
 
 
 def yt_search(song):
